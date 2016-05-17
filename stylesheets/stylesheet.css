@@ -137,8 +137,8 @@ img {
   position: relative;
   margin: 0 auto;
   max-width: 739px;
-  padding: 5px;
-  margin: 10px 0 10px 0;
+  padding: 0px;
+  margin: 0px 0 0px 0;
 }
 
 p img {
