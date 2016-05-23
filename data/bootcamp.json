@@ -2,7 +2,7 @@
   "Bootcamp": [{
     "Week": 1,
     "Title": "Getting Started",
-    "Objectives": ["some objectives", "some objectives", "some objectives"],
+    "Objectives": ["Introductions", "Lab Guides", "What is DevSecOps?"],
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-1/README.md",
     "Lessons": [{
       "number": 1,
