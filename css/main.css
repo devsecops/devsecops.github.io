@@ -128,6 +128,13 @@
     padding-left: 20px;
     cursor: pointer;
 }
+
+.bootcamp li {
+    padding-left: 5px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
 .organizations {
     background-color: rgb(109, 194, 233);
     padding: 20px 50px 20px 50px;
