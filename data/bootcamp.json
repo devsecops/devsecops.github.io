@@ -1,4 +1,4 @@
-JSON_CALLBACK([{
+{
   "Bootcamp": [{
     "Week": 1,
     "Title": "Getting Started",
@@ -162,4 +162,4 @@ JSON_CALLBACK([{
       "url": ""
     }]
   }]
-}]);
+}
