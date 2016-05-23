@@ -74,7 +74,7 @@
   }, {
     "Week": 5,
     "Title": "Building a Rugged Application",
-    "Objectives": ["Service Oriented Architecture (SOA)", "Automated AWS Deployments with CloudFormation", "Whitelisting & Attack Maps"],
+    "Objectives": ["Service Oriented Architecture (SOA)", "Automated deployments with CloudFormation", "Whitelisting & Attack Maps"],
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-5/README.md",
     "Lessons": [{
       "number": 1,
