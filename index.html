@@ -32,7 +32,6 @@
               <!--Search-->
               <div class=" span  bp1-col-2-1 bp3-col-2-1 bp2-col-2-1 bp0-col-2-0 mscom-header-search-section">
                 <div class="mscom-right mscom-header-section-2-4">
-                  <div>
                     <div class="CSPvNext">
                       <div class="row-fluid" data-cols="1" data-view1="1" data-view2="1" data-view3="1" data-view4="1">
                         <div class="span bp0-col-1-1 bp1-col-1-1 bp2-col-1-1 bp3-col-1-1 sortable-control">
@@ -61,7 +60,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
               <!--Search-->
@@ -119,7 +117,7 @@
     <div class="row-fluid dlc-body" data-cols="1" data-view1="1" data-view2="1" data-view3="1" data-view4="1">
         <div class="span bp0-col-1-1 bp1-col-1-1 bp2-col-1-1 bp3-col-1-1 sortable-control">
           <div class="main-content">
-            <div class="all-projects">
+            <div class="bootcamp">
                 <div class="col-md-4 col-md-offset-0 col-xs-6 col-xs-offset-0" ng-repeat="week in bootcamp">
                   <div class="panel panel-default">
                     <div class="panel-heading">
@@ -127,18 +125,11 @@
                         <div class="panel-title-area">{{week.Week}}: {{week.Title}}</div>
                       </a>
                     </div>
-                    <div class="panel-body fork-info">
-                      <span ng-if="project.Fork">
-                      <span class="glyphicon glyphicon-random"></span>Forked from <a ng-href="{{project.ForkedFromUrl}}">{{project.ForkedFrom}}</a>
-                      </span>
-                    </div>
-                    <div class="panel-body description"><span>{{project.Description}}</span></div>
                     <div class="panel-body">
                       <div class="row">
-                        <div class="center">
-                          <span class="span-stars-group"><i class="fa fa-star fa-fw"></i>{{project.Stars}}</span>
-                          <span class="span-forks-group"><i class="fa fa-code-fork fa-fw"></i>{{project.Forks}}</span>
-                        </div>
+                        <ul>
+                          <li ng-repeat="objective in week.Objectives">{{objective}}</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
