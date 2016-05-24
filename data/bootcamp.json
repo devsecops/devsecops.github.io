@@ -24,20 +24,20 @@
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-2/README.md",
     "Lessons": [{
       "number": 1,
-      "name": "",
+      "name": "Intro to Software Defined Environments",
       "url": "https://github.com/devsecops/bootcamp/blob/master/Week-2/LESSON-1.md"
     }, {
       "number": 2,
-      "name": "",
+      "name": "Intro to Micro Services",
       "url": "https://github.com/devsecops/bootcamp/blob/master/Week-2/LESSON-2.md"
     }, {
       "number": 3,
-      "name": "",
+      "name": "Build a Rails API & Deploy It",
       "url": "https://github.com/devsecops/bootcamp/blob/master/Week-2/LESSON-3.md"
     }]
   }, {
     "Week": 3,
-    "Title": "Security",
+    "Title": "Attack the Weakling",
     "Objectives": ["Deploy a Vulnerable application to AWS", "Attack the application using different techniques (e.g. OWASP Top 10)", "Explore security tools (e.g. Metasploit, NMap, SQLMap, BurpSuite ...etc)"],
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-3/README.md",
     "Lessons": [{
@@ -73,7 +73,7 @@
     }]
   }, {
     "Week": 5,
-    "Title": "Building a Rugged Application",
+    "Title": "Build a Rugged App",
     "Objectives": ["Service Oriented Architecture (SOA)", "Automated deployments with CloudFormation", "Whitelisting & Attack Maps"],
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-5/README.md",
     "Lessons": [{
@@ -91,7 +91,7 @@
     }]
   }, {
     "Week": 6,
-    "Title": "Rugged Security",
+    "Title": "Red FTW!",
     "Objectives": ["Account Takeovers", "Advanced cloud hacking techniques", "Lateral movement & privilege escalation"],
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-6/README.md",
     "Lessons": [{
@@ -109,7 +109,7 @@
     }]
   }, {
     "Week": 7,
-    "Title": "Rugged Operations",
+    "Title": "Hunt the Attacker",
     "Objectives": ["Restacking AWS Accounts", "Forensics in the Cloud", "Incident Response in the Cloud"],
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-7/README.md",
     "Lessons": [{
@@ -127,7 +127,7 @@
     }]
   }, {
     "Week": 8,
-    "Title": "Red Team vs Blue Team",
+    "Title": "Capstone Project",
     "Objectives": ["Put all your skills together", "Hack all the things", "Don't get caught by the Blue Team"],
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-8/README.md",
     "Lessons": [{
@@ -145,7 +145,7 @@
     }]
   }, {
     "Week": 9,
-    "Title": "Presentations",
+    "Title": "Demos",
     "Objectives": ["Problem-sovling", "Contribute to the open-source community", ""],
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-9/README.md",
     "Lessons": [{
