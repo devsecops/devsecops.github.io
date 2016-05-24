@@ -2,15 +2,15 @@
   "Bootcamp": [{
     "Week": 1,
     "Title": "Getting Started",
-    "Objectives": ["Introductions", "Lab Guides", "What is DevSecOps?"],
+    "Objectives": ["What is DevSecOps?", "Think like an Attacker", "Let's get moving!"],
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-1/README.md",
     "Lessons": [{
       "number": 1,
-      "name": "Introductions",
+      "name": "What is DevSecOps?",
       "url": "https://github.com/devsecops/bootcamp/blob/master/Week-1/LESSON-1.md"
     }, {
       "number": 2,
-      "name": "Lab Guides",
+      "name": "Think like an Attacker",
       "url": "https://github.com/devsecops/bootcamp/blob/master/Week-1/LESSON-2.md"
     }, {
       "number": 3,
