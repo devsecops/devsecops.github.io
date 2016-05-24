@@ -3204,7 +3204,7 @@ a.mscom-siteIdentity:hover {
     }
 }
 .mscom-siteLogo-small .mscom-image {
-    width: 94px;
+    width: 15rem;
     height: auto;
 }
 @media screen and (max-width:539px) {
