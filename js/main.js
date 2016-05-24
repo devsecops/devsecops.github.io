@@ -9,10 +9,11 @@ app.controller('MainCtrl', ['$scope', 'filterFilter', '$anchorScroll',
       self.projects = projectsData;
 
       $.ajax({
-        url: 'https://raw.githubusercontent.com/devsecops/devsecops.github.io/master/data/projects.json',
+        url: 'https://api.github.com/orgs/devsecops/repos',
+        // url: 'https://raw.githubusercontent.com/devsecops/devsecops.github.io/master/data/projects.json',
         dataType: 'json',
         success: function(data) {
-          var projects = data.AllProjects;
+          var projects = data;
           $scope.currentPage = 1; //current page
           $scope.maxSize = 5; //pagination max size
           $scope.entryLimit = 36; //max rows for data table

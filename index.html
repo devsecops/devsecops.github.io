@@ -25,18 +25,17 @@
             <div class="row-fluid  mscom-header-row-1" data-view4="2" data-view3="2" data-view2="2" data-view1="2" data-cols="2">
               <div class="span  bp1-col-2-1 bp2-col-2-1 bp3-col-2-1 bp0-col-2-1 mscom-header-section-1-1">
                 <a target="_self" class="mscom-link mscom-siteLogo mscom-siteLogo-small" title="DevSecops" href="http://www.devsecops.org">
-                  <img src="img/DSO-LOGO-TM.png" class="mscom-image mscom-left" alt="DevSecOps" width="320" height="78">
+                  <img src="img/DSO-LOGO-TM.png" class="mscom-image mscom-left" alt="DevSecOps">
                 </a>
               </div>
-            </div>
               <!--Search-->
               <div class=" span  bp1-col-2-1 bp3-col-2-1 bp2-col-2-1 bp0-col-2-0 mscom-header-search-section">
                 <div class="mscom-right mscom-header-section-2-4">
-                    <div class="CSPvNext">
-                      <div class="row-fluid" data-cols="1" data-view1="1" data-view2="1" data-view3="1" data-view4="1">
-                        <div class="span bp0-col-1-1 bp1-col-1-1 bp2-col-1-1 bp3-col-1-1 sortable-control">
-                          <div class="CMSvNextComp mscom-search">
-                            <span class="mscom-search-Border" id="ctl00_SearchBox">
+                  <div class="CSPvNext">
+                    <div class="row-fluid" data-cols="1" data-view1="1" data-view2="1" data-view3="1" data-view4="1">
+                      <div class="span bp0-col-1-1 bp1-col-1-1 bp2-col-1-1 bp3-col-1-1 sortable-control">
+                        <div class="CMSvNextComp mscom-search">
+                          <span class="mscom-search-Border" id="ctl00_SearchBox">
                                 <div class="mscom-search-Container">
                                   <input name="searchQuery"
                                     title="Search all DevSecOps repos"
@@ -56,10 +55,10 @@
                                     src="img/search.ltr.png" />
                                 </div>
                               </span>
-                          </div>
                         </div>
                       </div>
                     </div>
+                  </div>
                 </div>
               </div>
               <!--Search-->
@@ -68,6 +67,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
   <uib-tabset active="active" type="tabs">
     <!-- PROJECTS TAB -->
@@ -83,8 +83,8 @@
                 <div class="col-md-4 col-md-offset-0 col-xs-6 col-xs-offset-0" ng-repeat="project in filtered | startFrom:(currentPage-1)*entryLimit | limitTo:entryLimit">
                   <div class="panel panel-default">
                     <div class="panel-heading">
-                      <a ng-href="{{project.Url}}">
-                        <div class="panel-title-area">{{project.Name}}</div>
+                      <a ng-href="{{project.html_url}}">
+                        <div class="panel-title-area">{{project.name}}</div>
                       </a>
                     </div>
                     <div class="panel-body fork-info">
@@ -92,12 +92,12 @@
                       <span class="glyphicon glyphicon-random"></span>Forked from <a ng-href="{{project.ForkedFromUrl}}">{{project.ForkedFrom}}</a>
                       </span>
                     </div>
-                    <div class="panel-body description"><span>{{project.Description}}</span></div>
+                    <div class="panel-body description"><span>{{project.description}}</span></div>
                     <div class="panel-body">
                       <div class="row">
                         <div class="center">
-                          <span class="span-stars-group"><i class="fa fa-star fa-fw"></i>{{project.Stars}}</span>
-                          <span class="span-forks-group"><i class="fa fa-code-fork fa-fw"></i>{{project.Forks}}</span>
+                          <span class="span-stars-group"><i class="fa fa-star fa-fw"></i>{{project.watchers}}</span>
+                          <span class="span-forks-group"><i class="fa fa-code-fork fa-fw"></i>{{project.forks}}</span>
                         </div>
                       </div>
                     </div>
@@ -114,29 +114,29 @@
     </uib-tab>
     <!-- BOOTCAMP TAB -->
     <uib-tab index="1" heading="Bootcamp">
-    <div class="row-fluid dlc-body" data-cols="1" data-view1="1" data-view2="1" data-view3="1" data-view4="1">
+      <div class="row-fluid dlc-body" data-cols="1" data-view1="1" data-view2="1" data-view3="1" data-view4="1">
         <div class="span bp0-col-1-1 bp1-col-1-1 bp2-col-1-1 bp3-col-1-1 sortable-control">
           <div class="main-content">
             <div class="bootcamp">
-                <div class="col-md-4 col-md-offset-0 col-xs-6 col-xs-offset-0" ng-repeat="week in bootcamp">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <a ng-href="{{week.url}}">
-                        <div class="panel-title-area">{{week.Week}}: {{week.Title}}</div>
-                      </a>
-                    </div>
-                    <div class="panel-body">
-                      <div class="row">
-                        <ul>
-                          <li ng-repeat="objective in week.Objectives">{{objective}}</li>
-                        </ul>
-                      </div>
+              <div class="col-md-4 col-md-offset-0 col-xs-6 col-xs-offset-0" ng-repeat="week in bootcamp">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <a ng-href="{{week.url}}">
+                      <div class="panel-title-area">{{week.Week}}: {{week.Title}}</div>
+                    </a>
+                  </div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <ul>
+                        <li ng-repeat="objective in week.Objectives">{{objective}}</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <pagination class="col-xs-12 paginator pagination-small" ng-show="noOfRepos > 12" data-boundary-links="true" data-num-pages="noOfPages" data-current-page="currentPage" on-select-page="pageChanged()" max-size="maxSize" data-previous-text="&laquo;" data-next-text="&raquo;"></pagination>
-                </div>
+              </div>
+              <div>
+                <pagination class="col-xs-12 paginator pagination-small" ng-show="noOfRepos > 12" data-boundary-links="true" data-num-pages="noOfPages" data-current-page="currentPage" on-select-page="pageChanged()" max-size="maxSize" data-previous-text="&laquo;" data-next-text="&raquo;"></pagination>
+              </div>
             </div>
           </div>
         </div>
