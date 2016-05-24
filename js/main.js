@@ -21,7 +21,7 @@ app.controller('MainCtrl', ['$scope', 'filterFilter', '$anchorScroll',
           /* init pagination with $scope.list */
           $scope.noOfRepos = projects.length;
           $scope.noOfPages = Math.ceil($scope.noOfRepos / $scope.entryLimit);
-          $scope.resultsSectionTitle = 'All Repos';
+          $scope.resultsSectionTitle;
           $scope.pageChanged = function() {
             $anchorScroll();
           };
@@ -31,7 +31,7 @@ app.controller('MainCtrl', ['$scope', 'filterFilter', '$anchorScroll',
             $scope.filtered = filterFilter(projects, term);
             $scope.noOfRepos = $scope.filtered.length;
             $scope.noOfPages = Math.ceil($scope.noOfRepos / $scope.entryLimit);
-            $scope.resultsSectionTitle = (!term) ? 'All Repos' : (($scope.noOfRepos === 0) ? 'Search results' : ($scope.noOfRepos + ' repositories found'));
+            $scope.resultsSectionTitle = (!term) ? '' : (($scope.noOfRepos === 0) ? 'Search results' : ($scope.noOfRepos + ' repositories found'));
           });
 
           self.projects = projects;
