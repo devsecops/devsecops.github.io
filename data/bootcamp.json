@@ -128,7 +128,7 @@
   }, {
     "Week": 8,
     "Title": "Capstone Project",
-    "Objectives": ["Put all your skills together", "Hack all the things", "Don't get caught by the Blue Team"],
+    "Objectives": ["Put all your skills together", "Hack all the things"],
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-8/README.md",
     "Lessons": [{
       "number": 1,
@@ -146,7 +146,7 @@
   }, {
     "Week": 9,
     "Title": "Demos",
-    "Objectives": ["Problem-sovling", "Contribute to the open-source community", ""],
+    "Objectives": ["Demonstrate Problem-Solving", "Contribute to the open-source community"],
     "url": "https://github.com/devsecops/bootcamp/blob/master/Week-9/README.md",
     "Lessons": [{
       "number": 1,
